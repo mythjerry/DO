@@ -5,12 +5,11 @@ public class Student extends Person{
 		
 		@Override
 		public void getAbs01() {
-			System.out.println("抽象");
+			System.out.println("抽象");//有{ }有實作
 		}
 
 		@Override
 		public void getAbs02() {
-			// TODO Auto-generated method stub
 			
 		}
 	

@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Test;
+
 /*
  * 集合
  * 1.collection 單列結構 
@@ -13,34 +15,20 @@ import java.util.List;
 
 public class Demo03 {
 	
-	public void test02() {
-		List list=new LinkedList();
-		list.add("深田詠美"); //新增
-		list.add("小梅惠奈");
-		list.add("田中寧寧");
-		System.out.println(list.size());
-		for(Object x:list) {
-			System.out.println(x);
+		@Test
+		public void test01() {
+			//前為父類別 x=new 建立子類別
+			List list=new ArrayList();
+			list.add("張三");
+			list.add("李四");
+			list.add("王五");
+			list.add(2,"加入索引值");
+			System.out.println(list.size());
+			System.out.println(list.isEmpty());
+			
+			for(Object x:list) {
+				System.out.println(x);
+			}
 		}
-	}
 	
-	public void  test01() {
-		//前為父類別 x=new 建立子類別
-		List list = new ArrayList();
-		list.add("深田詠美"); //新增
-		list.add("小梅惠奈");
-		list.add("田中寧寧");
-		list.add(2,"加入索引值");
-		list.remove(2);
-		list.remove("小梅惠奈");
-		list.clear();
-		System.out.println(list.size());
-		System.out.println(list.isEmpty());
-		System.out.println(list.contains("小梅惠奈");
-		for(Object x:list) {
-			System.out.println(x);
-		}
-		Object[] f=list.
-	}
-
 }
