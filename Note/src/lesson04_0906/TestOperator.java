@@ -4,8 +4,8 @@ class TestOperator{
 	public static void main(String[] args){
 		int i=5;
 		int j=5;
-		System.out.println(++i);
-		System.out.println(j++);
+		System.out.println(++i); //6
+		System.out.println(j++); //5
 		System.out.println("===============================1");
         /*
             ++i
@@ -16,7 +16,7 @@ class TestOperator{
 
 		i=5;
 		j=5;
-		System.out.println(i+++j);  // i++ +j      10 ===> i先丟出 5與j相加  後i
+		System.out.println(i+++j);  // i++ +j   10 ===> i先丟出 5與j相加  後i
 		System.out.println(i);//6
 		System.out.println(j);//5
 		System.out.println("===============================2");
@@ -37,12 +37,12 @@ class TestOperator{
         
 		i=5;
 		j=5;                
-        System.out.println(i+++ ++j);
-		System.out.println(i);
-		System.out.println(j);
+        System.out.println(i+++ ++j); //11
+		System.out.println(i); //6
+		System.out.println(j); //6
 		System.out.println("===============================5");
         /*
-          i+++++j 會被電腦解意成 i++ ++ +j 三段  第一段 i++ 結果是一個值不是變數 ,是不能再被 後++
+          i+++++j 會被電腦解意成 i++ ++ +j 三段  第一段 i++ 結果是一個值不是變數 ,是不能再被後++
           有就是 ++ -- 只能對變數內容加減一,但值就是值不能再加減一,  
         */
         /*
@@ -86,7 +86,7 @@ class TestOperator{
 		System.out.println("===============================8");
 
 		i=1;
-		j=i-- + ++i+i-- + ++i;
+		j=i-- + ++i;
 		System.out.println(i);
 		System.out.println(j);
 		System.out.println("===============================9");

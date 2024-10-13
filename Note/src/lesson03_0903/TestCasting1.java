@@ -7,7 +7,7 @@ package lesson03_0903;
 class TestCasting1{
     public static void main(String[] args){
     	
-        int i=3.0;
+        int i=3.0; //error
         System.out.println(i);
         
         byte b1=5;

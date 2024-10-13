@@ -17,11 +17,16 @@ class TestBitShiftA{
     public static void main(String[] args){
         int i=8;
         int j=8;
-        System.out.println(i>>1);
-        System.out.println(j>>>1);
+        System.out.println(i>>1); //4
+        System.out.println(j>>>1);  //4
         int k=-8;
         int l=-8;
-        System.out.println(k>>1);
-        System.out.println(l>>>1);
+        System.out.println(k>>1); //-4
+        System.out.println(l>>>1); //2147483644
+        
+        byte x1=127;
+        byte x2=2;
+        byte total=(byte)(x1+x2);
+        System.out.println(total); //-127
     }
 }

@@ -7,13 +7,17 @@ java 位移 :
 1.第一種傳統方式 每次位移一次,位移97次因超出格子,就變0
 2.第二種位移就一次位移超出32bit,則以一次位移總次數除以32的餘數位移
 */
-class TestBitShift1{
+class TestBitShift{
+	
     public static void main(String[] args){
+    	int i=8;
+        System.out.println(i>>1); //除以2 8/2=4
+        int j=4;
+        System.out.println(j<<1); //乘以2 4*2=8
         method01();
-        method02();
     }
 
-	public static void method02() {
+	public static void method01() {
 		int i=8;
         System.out.println(i>>97);
         int j=4;
@@ -23,12 +27,5 @@ class TestBitShift1{
             k=k<<1;
         }
         System.out.println(k);
-	}
-
-	public static void method01() {
-		int i=8;
-        System.out.println(i>>1);
-        int j=4;
-        System.out.println(j<<1);
 	}
 }

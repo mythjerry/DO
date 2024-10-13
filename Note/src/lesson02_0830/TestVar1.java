@@ -1,4 +1,4 @@
-package lesson2_0830;
+package lesson02_0830;
 
 /*
 java 變數是強制型別:(java變數一經宣告在存活期間,不能再改變型態)
